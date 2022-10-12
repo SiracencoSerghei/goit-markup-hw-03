@@ -1,0 +1,213 @@
+          /* global variables */
+:root {
+    --primary-font-family: 'Roboto', sans-serif;
+    --primary-color: #757575;
+    --secondary-color: #212121;
+    --accent-color: #2196F3;
+    
+
+}
+
+            /* BODY */
+body {
+    font-family: var(--primary-font-family), -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue,  helvetica, Cantarell, Ubuntu, noto, arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+}
+/* ШАПКА САЙТУ */
+.list {
+    list-style-type: none;
+}
+.link {
+    text-decoration: none;
+}
+
+.nav-links .link.nav-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #000000;
+}
+.nav-links .link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+}
+ 
+.header-mail,
+.header-tel {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+}
+
+.accent,
+.current,
+.nav-links .current,
+.nav-studio:hover,
+.nav-studio:focus,
+.nav-portfolio:hover,
+.nav-portfolio:focus,
+.nav-contacts:hover,
+.nav-contacts:focus,
+.header-mail:hover,
+.header-tel:hover,
+.header-mail:focus,
+.header-tel:focus,
+.map-link:hover,
+.map-link:focus,
+.footer-mail:hover,
+.footer-tel:hover,
+.footer-mail:focus,
+.footer-tel:focus {
+   color: var(--accent-color);
+}
+
+/* ПІДВАЛ САЙТУ */
+.page-footer {
+    background-color: #2F303A;
+
+}
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+.firm-address {
+    font-weight: 400;
+    line-height: 1.71;
+    font-style: normal;
+}
+.map-link {
+    color: #FFFFFF;
+}
+.footer-mail,
+.footer-tel {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* BODY OF INDEX.HTML */
+
+/* BANNER SECTION */
+
+.banner {
+    background-color: #2F303A;
+    text-align: center;
+
+}
+.banner-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.banner-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+.banner-button:hover,
+.banner-button:focus {
+    background-color:  #F7941E;
+}
+
+
+/* KEY-FEATURES SECTION */
+
+.key-features-titles {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+
+}
+.key-features-text {
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+/* WE-DO SECTION */
+
+.we-do-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--secondary-color);
+
+}
+
+/* OUR TEAM */
+
+.our-team {
+    background: #F5F4FA;
+}
+.our-team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--secondary-color);
+}
+.our-team-member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--secondary-color);
+}
+.our-team-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+   
+}
+
+/* PORTFOLIO-PAGE */
+
+/* BUTTONS */
+
+.portfolio-filter-list [type="button"] {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    color: var(--secondary-color);
+}
+.portfolio-filter-list [type="button"]:hover,
+.portfolio-filter-list [type="button"]:focus {
+    color: #FFFFFF;
+    background: var(--accent-color);
+    
+}
+
+/* WORK DESCRIPTION */
+
+.work-list-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-color);
+}
+a.link .work-list-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--primary-color);
+    
+}
+
