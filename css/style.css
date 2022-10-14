@@ -15,7 +15,16 @@ body {
     letter-spacing: 0.03em;
     color: var(--primary-color);
 }
-/* ШАПКА САЙТУ */
+
+.h1,
+.h2,
+.h3,
+.ul,
+.p {
+  margin: 0;
+  padding: 0;
+}
+
 .list,
 .item {
     list-style-type: none;
@@ -29,16 +38,20 @@ body {
     text-decoration: none;
    
 }
-.box {
+.container {
     display: flex;
     align-items: center;
+
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
+   
+    
 }
 
+/* ШАПКА САЙТУ */
 
 .nav {
     display: flex;
@@ -76,6 +89,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
+
+   
 }
  
 .header-mail,
@@ -140,34 +155,63 @@ body {
 /* BANNER SECTION */
 
 .banner {
+    margin-top: 0;
+
     background-color: #2F303A;
     text-align: center;
 
 }
+
+
 .banner-title {
+    padding-top: 197px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    align-items: center;
+      
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+
+
+    background-color: #2F303A;
+
+    
+
 }
 .banner-button {
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     color: #FFFFFF;
+    border: 1px solid transparent;
     background-color: var(--accent-color);
     cursor: pointer;
 }
 .banner-button:hover,
 .banner-button:focus {
     background-color:  #F7941E;
+
+     border: 1px solid blueviolet;
+
 }
 
 
 /* KEY-FEATURES SECTION */
+
 
 .key-features-titles {
     font-size: 14px;
