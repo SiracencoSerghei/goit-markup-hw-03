@@ -16,21 +16,62 @@ body {
     color: var(--primary-color);
 }
 /* ШАПКА САЙТУ */
-.list {
+.list,
+.item {
     list-style-type: none;
-}
-.link {
-    text-decoration: none;
+    
 }
 
-.nav-links .link.nav-logo {
+
+
+.link {
+    
+    text-decoration: none;
+   
+}
+.box {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+    
+.nav-link {
+    display: flex;
+    padding: 0;
+    margin-left: 93px;
+
+   
+ }
+  
+.nav-link .item:not(:last-child) {
+    margin-right: 50px;
+}
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+    
+}
+
+.nav .link.nav-logo {
+    display: block;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     color: #000000;
 }
-.nav-links .link {
+.nav .link {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -44,10 +85,12 @@ body {
     letter-spacing: 0.02em;
     color: var(--primary-color);
 }
-
+.header-contacts .item + .item {
+    margin-left: 50px;;
+}
 .accent,
 .current,
-.nav-links .current,
+.nav .current,
 .nav-studio:hover,
 .nav-studio:focus,
 .nav-portfolio:hover,
