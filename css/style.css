@@ -39,8 +39,6 @@ body {
    
 }
 .container {
-    display: flex;
-    align-items: center;
 
     width: 1200px;
     padding-left: 15px;
@@ -52,6 +50,14 @@ body {
 }
 
 /* ШАПКА САЙТУ */
+.box {
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #ECECEC;
+
+
+}
 
 .nav {
     display: flex;
@@ -59,6 +65,7 @@ body {
 }
     
 .nav-link {
+
     display: flex;
     padding: 0;
     margin-left: 93px;
@@ -77,7 +84,7 @@ body {
 
 .nav .link.nav-logo {
     display: block;
-
+    
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -85,6 +92,7 @@ body {
     color: #000000;
 }
 .nav .link {
+
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -95,14 +103,22 @@ body {
  
 .header-mail,
 .header-tel {
+
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-color);
 }
+
 .header-contacts .item + .item {
     margin-left: 50px;;
 }
+
+
+
+
+/* ACCENT, HOVER, FOCUS of site */
+
 .accent,
 .current,
 .nav .current,
@@ -125,12 +141,26 @@ body {
    color: var(--accent-color);
 }
 
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 /* ПІДВАЛ САЙТУ */
 .page-footer {
     background-color: #2F303A;
 
 }
 .footer-logo {
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -138,6 +168,7 @@ body {
     color: #FFFFFF;
 }
 .firm-address {
+
     font-weight: 400;
     line-height: 1.71;
     font-style: normal;
@@ -155,6 +186,7 @@ body {
 /* BANNER SECTION */
 
 .banner {
+
     margin-top: 0;
 
     background-color: #2F303A;
@@ -164,6 +196,7 @@ body {
 
 
 .banner-title {
+
     padding-top: 197px;
     margin-top: 0;
     margin-left: auto;
@@ -212,8 +245,14 @@ body {
 
 /* KEY-FEATURES SECTION */
 
+.key-features .list {
+
+    display: flex;
+}
 
 .key-features-titles {
+    align-items: center;
+
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -221,6 +260,8 @@ body {
 
 }
 .key-features-text {
+
+
     font-weight: 400;
     line-height: 1.71;
 }
@@ -228,11 +269,17 @@ body {
 /* WE-DO SECTION */
 
 .we-do-title {
+    align-items: center;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     color: var(--secondary-color);
+
+}
+.we-do .list {
+    display: flex;
 
 }
 
@@ -241,7 +288,12 @@ body {
 .our-team {
     background: #F5F4FA;
 }
+.our-team .list {
+    display: flex;
+}
 .our-team-title {
+    align-items: center;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -267,7 +319,12 @@ body {
 
 /* BUTTONS */
 
+.portfolio-filter {
+    display: flex;
+}
+
 .portfolio-filter-list [type="button"] {
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -283,7 +340,10 @@ body {
 }
 
 /* WORK DESCRIPTION */
-
+.work-examples {
+    display: flex;
+    flex-wrap: wrap;
+}
 .work-list-title {
     font-size: 18px;
     line-height: 2;
@@ -296,17 +356,4 @@ a.link .work-list-description {
     line-height: 1.88;
     color: var(--primary-color);
     
-}
-
-.visually-hidden {
-  position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
 }
