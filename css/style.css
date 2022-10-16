@@ -44,8 +44,11 @@ p {
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-   
-    
+      
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* ШАПКА САЙТУ */
@@ -207,25 +210,18 @@ p {
 
 .banner {
 
-    margin-top: 0;
-
     background-color: #2F303A;
     text-align: center;
 
 }
+.banner-section {
+    padding: 104px 0;
+}
 
 
 .banner-title {
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    padding-top:200px;
     padding-bottom: 30px;
-
-    align-items: center;
-      
-
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -237,11 +233,8 @@ p {
 }
 
 .banner-button {
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 200px;
-    padding-bottom: ;
+    margin: 0;
+    padding: 0;
     
     font-family: inherit;
     font-weight: 700;
@@ -262,6 +255,9 @@ p {
 
 
 /* KEY-FEATURES SECTION */
+.section.key-features {
+    padding-bottom: 0;
+}
 
 .key-features .list {
     display: flex;
@@ -270,13 +266,9 @@ p {
 .list .key-features-list:not(:first-child) {
     margin-left: 30px;
 }
-.key-features-list {
-    margin-top: 94px;
-}
-.key-features-titles {
-    padding: 0;
-    margin: 0;
 
+.key-features-titles {
+    
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -284,11 +276,7 @@ p {
 
 }
 .key-features-text {
-    padding 0;
     margin-top: 10px;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
 
     font-weight: 400;
     line-height: 1.71;
@@ -297,9 +285,7 @@ p {
 /* WE-DO SECTION */
 
 .we-do-title {
-    margin-top: 94px;
-    margin-bottom: 0;
-
+    margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -310,35 +296,19 @@ p {
 }
 .we-do .list {
     display: flex;
-
-    margin-top: 50px;
-    margin-right: 0;
-    margin-bottom: 94px;
-    margin-left: 0;
-
+    margin: 0;
 }
-
-
 .we-do-list:not(:first-child) {
     margin-left: 30px;
-}
-.we-do-list .image,
-.work-list .image {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
 }
 
 
 /* OUR TEAM */
 
 .our-team {
-    margin-top: 94px;
     background: #F5F4FA;
 }
 .our-team-title {
-    padding-top: 94px;
     padding-bottom: 50px;
 
 
@@ -351,12 +321,9 @@ p {
 }
 
 .our-team .list {
-    display: flex;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 94px;
-    padding-left: 0;
 
+    display: flex;
+    
 }
 .list .our-team-list {
     padding: 0;
@@ -395,26 +362,20 @@ p {
 }
 
 /* PORTFOLIO-PAGE */
-.portfolio-section {
-    display: flex;
-    flex-direction: column;
 
-}
 
 /* BUTTONS */
 
 .portfolio-filter {
     display: flex;
-    margin-top: 94px;
-    margin-right: auto;
-    margin-bottom: 50px;
-    margin-left: auto;
     justify-content: center;
+    padding-bottom: 16px;
+    margin-bottom: 34px;    
     
 }
 
 .portfolio-filter-list [type="button"] {
-    margin: 0;
+
     padding: 6px 22px;
 
     font-family: inherit;
@@ -444,12 +405,6 @@ p {
 .work-examples {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 99px;
-    margin-left: 0;
-
-    padding: 0;
 
 }
 .work-list .link {
@@ -460,7 +415,6 @@ p {
 .work-list {
     display: block;
     
-
     margin-top: 0;
     margin-right: 30px;
     margin-bottom: 30px;
