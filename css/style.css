@@ -322,7 +322,8 @@ p {
 .we-do-list:not(:first-child) {
     margin-left: 30px;
 }
-.we-do-list .image {
+.we-do-list .image,
+.work-list .image {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -394,14 +395,27 @@ p {
 }
 
 /* PORTFOLIO-PAGE */
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+
+}
 
 /* BUTTONS */
 
 .portfolio-filter {
     display: flex;
+    margin-top: 94px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    justify-content: center;
+    
 }
 
 .portfolio-filter-list [type="button"] {
+    margin: 0;
+    padding: 6px 22px;
 
     font-family: inherit;
     font-weight: 500;
@@ -409,6 +423,10 @@ p {
     line-height: 1.63;
     text-align: center;
     color: var(--secondary-color);
+    background: #F5F4FA;
+    border-color: transparent;
+    border-radius: 4px;
+
 }
 .portfolio-filter-list [type="button"]:hover,
 .portfolio-filter-list [type="button"]:focus {
@@ -416,19 +434,74 @@ p {
     background: var(--accent-color);
     
 }
+.portfolio-filter .portfolio-filter-list:not(:first-child) {
+    margin-left: 8px;
+
+}
+
 
 /* WORK DESCRIPTION */
 .work-examples {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 99px;
+    margin-left: 0;
+
+    padding: 0;
+
 }
+.work-list .link {
+    display: flex;
+    flex-direction: column;
+
+}
+.work-list {
+    display: block;
+    
+
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    padding: 0;
+
+}
+.work-list:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+.work-list:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+.work-list-border {
+    margin: 0;
+    padding: 20px 24px;
+
+    border-top: 0;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+
 .work-list-title {
+    margin: 0;
+    padding: 0;
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--secondary-color);
 }
-a.link .work-list-description {
+.work-list-description {
+    padding: 0;
+    margin-top: 8px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
