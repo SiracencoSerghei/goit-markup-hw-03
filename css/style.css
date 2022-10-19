@@ -225,15 +225,15 @@ p {
     color: #FFFFFF;
 }
 
-.banner-button {
-    display: block;
+.hero .banner-button {
+    display: flex;
+    width: 216px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    padding-top: 10px;
-    padding-right: 32px;
-    padding-bottom: 10px;
-    padding-left: 32px;
-    
-    font-family: inherit;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -242,16 +242,14 @@ p {
     border: 1px solid transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    
-
     background-color: var(--accent-color);
     cursor: pointer;
 }
 .banner-button:hover,
 .banner-button:focus {
-    background-color:  hsl(192, 78%, 55%);
-
-     border: 1px solid hsl(271, 83%, 51%);
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 
 }
 
@@ -269,8 +267,11 @@ p {
 }
 /* .key-features-list:nth-child(4n) {
     margin-right: 0; */
-}
-.key-features-titles {
+
+.key-features-list .key-features-titles {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-style: normal;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -345,13 +346,21 @@ p {
 /* .members .list:not(:first-child) {
     margin-left: 30px; */
 
+.description-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 .employee-name {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: 0;
-    margin-right: 0;
+    display: flex;
 
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -359,13 +368,6 @@ p {
     color: var(--secondary-color);
 }
 .position {
-    margin-top: 0;
-    margin-bottom: 30px;
-    margin-left: 0;
-    margin-right: 0;
-
-
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
